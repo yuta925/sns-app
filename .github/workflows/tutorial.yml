@@ -1,0 +1,18 @@
+on: push
+
+jobs:
+  # "my_first_job"という名前でジョブを定義
+  my_first_job:
+    name: My first job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+  # "my_second_job"というジョブIDでジョブを定義
+  my_second_job:
+    name: My second job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
